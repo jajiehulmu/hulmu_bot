@@ -16,13 +16,6 @@ async def on_ready():
 
 @bot.command(pass_context=True)
 async def ping(ctx):
-    await bot.say(":ping_pong: ping!! x555")
-
-@bot.event
-async def on_member_join(member):
-    await bot.send_message(member.server, "Welcome {0.mention}, would you like to introduce yourself?".format(member))
-
-@bot.command(pass_context=True)
-async def greet(ctx):
+    await bot.say(":ping_pong: hey")
     
 bot.run("NDc4OTU3NTQ0OTU4NzIyMDUz.Dmvz8w.A9jeAQQnB14RaL97970A38V3j8s")
