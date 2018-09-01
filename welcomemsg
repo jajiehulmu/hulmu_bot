@@ -11,10 +11,17 @@ async def on_ready():
     print (client.user.id)
     print ('-----')
     
+newUserMessage = """
+Hello
+
+Welcome
+To the server
+"""
+
 @client.event
 async def on_member_join(member):
     print("Recognized that a member called " + member.name + " joined")
-    await client.send_message(member, "Welcome to the server!")
+    await client.send_message(member, newUserMessage)
     print("Sent message to " + member.name)
     
 client.run('NDc4OTU3NTQ0OTU4NzIyMDUz.DmxJTg.PqnMfhLnKbKKn6WKKtMJxbCWJaM')
