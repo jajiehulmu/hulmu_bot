@@ -20,8 +20,9 @@ async def ping(ctx):
 
 @bot.event
 async def on_member_join(member):
-    server = member.server
-    fmt = 'Welcome {0.mention} to {1.name}!'
-    await client.send_message(server, fmt.format(member, server))
+    await bot.send_message(member.server, "Welcome {0.mention}, would you like to introduce yourself?".format(member))
+
+@bot.command(pass_context=True)
+async def greet(ctx):
     
 bot.run("NDc4OTU3NTQ0OTU4NzIyMDUz.Dmvz8w.A9jeAQQnB14RaL97970A38V3j8s")
