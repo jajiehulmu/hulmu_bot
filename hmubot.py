@@ -15,5 +15,9 @@ async def on_ready():
     print (bot.user.id)
     print ('-----')
     
-          
+@bot.command
+async def on_member_join(member):
+    await bot.say('pakyu')
+    
+    
 bot.run("NDc4OTU3NTQ0OTU4NzIyMDUz.Dmvz8w.A9jeAQQnB14RaL97970A38V3j8s")
