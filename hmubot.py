@@ -19,6 +19,6 @@ async def on_ready():
 async def on_member_join(member):
     print("Recognized that a member called " + member.name + " joined")
     await bot.send_message(member, "Welcome to the server!")
-    print('Sent message to " + member.name)
+    print("Sent message to " + member.name)
           
 bot.run("NDc4OTU3NTQ0OTU4NzIyMDUz.Dmvz8w.A9jeAQQnB14RaL97970A38V3j8s")
