@@ -7,14 +7,6 @@ import asyncio
 
 bot = commands.Bot(command_prefix='#')
 
-@bot.event
-async def on_ready():
-    
-    print ("logged in as")
-    print (bot.user.name)
-    print (bot.user.id)
-    print ('-----')
     
     
-    
-bot.run("NDc4OTU3NTQ0OTU4NzIyMDUz.Dmvz8w.A9jeAQQnB14RaL97970A38V3j8s")
+bot.run("TOKEN")
