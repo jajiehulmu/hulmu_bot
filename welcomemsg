@@ -3,13 +3,6 @@ import asyncio
 
 client = discord.Client()
 
-@client.event
-async def on_ready():
-    
-    print ("logged in as")
-    print (client.user.name)
-    print (client.user.id)
-    print ('-----')
     
 newUserMessage = """
 Hello
@@ -24,4 +17,4 @@ async def on_member_join(member):
     await client.send_message(member, newUserMessage)
     print("Sent message to " + member.name)
     
-client.run('NDc4OTU3NTQ0OTU4NzIyMDUz.DmxJTg.PqnMfhLnKbKKn6WKKtMJxbCWJaM')
+client.run('TOKEN')
